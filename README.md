@@ -9,16 +9,16 @@
 * 干垃圾
 
 ### 数据结构
-`中文名(chinese),英文名(english),类型(type),描述(describe)`
+`中文名(chinese)	英文名(english)	类型(type)	描述(describe)`
 * 中文名(chinese): 垃圾的中文名
 * 英文名(english): 垃圾的英文名
 * 类型(type): 垃圾的类型
 * 描述(describe): 解释性描述或其他说明
 
-ex: `蔬菜叶,leaves of vegetable,湿垃圾`
+ex: `蔬菜叶	leaves of vegetable	湿垃圾	蔬菜叶可以降解堆肥，属于湿垃圾`
 
 #### 有害垃圾
-存储于[hazardous.txt](./src/data/hazardous.txt)
+存储于[harmful.txt](./src/data/harmful.txt)
 
 #### 可回收垃圾
 存储于[recyclable.txt](./src/data/recyclable.txt)
