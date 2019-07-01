@@ -15,7 +15,7 @@
 * 类型(type): 垃圾的类型
 * 描述(describe): 解释性描述或其他说明
 
-ex: `蔬菜叶	leaves of vegetable	湿垃圾	蔬菜叶可以降解堆肥，属于湿垃圾`
+e.g.: `蔬菜叶	leaves of vegetable	湿垃圾	蔬菜叶可以降解堆肥，属于湿垃圾`
 
 #### 有害垃圾
 存储于[harmful.txt](./src/data/harmful.txt)
