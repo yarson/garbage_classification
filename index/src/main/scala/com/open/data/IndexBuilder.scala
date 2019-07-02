@@ -9,8 +9,7 @@ object IndexBuilder {
 
   def main(args: Array[String]): Unit = {
     if (args.length < 3) {
-      throw new Exception("'inputPath', 'forwardIndexPath', 'invertIndexPath' is need!\n" +
-        "Usage: ... <mainClass> inputPath=<path> forwardIndexPath=<path> invertIndexPath=<path>")
+      throw new Exception("Usage: ... <mainClass> inputPath=<path> forwardIndexPath=<path> invertIndexPath=<path>")
     }
     // 参数解析及完整性校验
     val argsMap = argsParse(args)
