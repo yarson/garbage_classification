@@ -65,7 +65,9 @@ object IndexBuilder {
     println(s"Forward index count: ${forwardDF.count()}")
     //TODO: delete forward/invert index path if exist
     // 保存正排数据到指定路径，用于搜索引擎
-    forwardDF.write.mode(SaveMode.Overwrite).text(forwardIndexPath)
+    forwardDF.select("id","chineseName", "englishName", "garbageType", "describe")
+      .map(_.mkString("\t"))
+      .write.mode(SaveMode.Overwrite).text(forwardIndexPath)
     println(s"Save forward index data into: ${forwardIndexPath} success.")
     // 构建倒排索引并保存到指定路径，用于搜索引擎
     val invertIndexCounter = spark.sparkContext.longAccumulator("invertIndexCounter")

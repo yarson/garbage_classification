@@ -18,13 +18,20 @@
 e.g.: `蔬菜叶	leaves of vegetable	湿垃圾	蔬菜叶可以降解堆肥，属于湿垃圾`
 
 #### 有害垃圾
-存储于[harmful.txt](./src/data/harmful.txt)
+存储于[harmful.txt](./data/harmful.txt)
 
 #### 可回收垃圾
-存储于[recyclable.txt](./src/data/recyclable.txt)
+存储于[recyclable.txt](./data/recyclable.txt)
 
 #### 湿垃圾
-存储于[wet.txt](./src/data/wet.txt)
+存储于[wet.txt](./data/wet.txt)
 
 #### 干垃圾
-存储于[dry.txt](./src/data/dry.txt)
+存储于[dry.txt](./data/dry.txt)
+
+
+### 已实现功能
+* 正/倒排索引构建(基于spark),[详见](./index/)
+
+### 未实现功能
+* 搜索服务
